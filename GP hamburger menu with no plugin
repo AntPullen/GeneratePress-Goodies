@@ -1,0 +1,49 @@
+>> Start by adding the following code to the GP Hook - Before Header Content (requires GeneratePress Premium)
+
+<div class="sf-menu">
+		<div class="slideout-toggle">
+			<a href="#generate-slideout-menu" data-transition="overlay" ></a>
+		</div>
+</div>
+
+>> Press Save Hooks to save and activate the code
+
+>> Now go to the open the Customise option
+
+>> Go to Layout > Slide-out Navigation and select Both from the drop down options. 
+The hamburger menu icon should now appear in your site menu bar.
+
+>> Go to Layout > Primary Navigation. 
+>> From the Navigation Location options select 'No Navigation'.
+Your main menu will disappear but you will be left with just the 'hamburger' menu on the screen. That's it! - it's just a case of styling it and fixing it with a bit of CSS.
+
+
+HOW TO STYLE AND POSITION THE MENU ICON
+
+/* This controls where you want the menu to appear on the page */
+
+.slideout-toggle { 
+	position:fixed;
+	right:50px;
+	top:50px;
+}
+
+/* This controls the look of the menu icon */
+
+.slideout-toggle a::before {
+	line-height:1.5em !important; /* padding value top and bottom */
+	width:1.5em !important; /* padding value left and right */
+	color:#fff; /* fontAwesome icon colour */
+	background-color:#0004;
+	border-radius:5px; /* rounded corner edges - set to 0 if you want it to be square */
+	font-size:28px; /* NOTE- FontAwesome displays best in multiples of 14px values */
+}
+
+/* this is the menu hover color if required */
+
+.slideout-toggle a:hover::before {
+	color:#fff;
+}
+
+
+That's it :)
