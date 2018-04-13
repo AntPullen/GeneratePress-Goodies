@@ -26,6 +26,7 @@ HOW TO STYLE AND POSITION THE MENU ICON
 	position:fixed;
 	right:50px;
 	top:50px;
+	z-index:9999999;
 }
 
 /* This controls the look of the menu icon */
